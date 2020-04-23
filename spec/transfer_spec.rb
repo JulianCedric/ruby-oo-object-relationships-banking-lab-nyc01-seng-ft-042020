@@ -59,7 +59,8 @@ describe 'Transfer' do
       expect(transfer.status).to eq("complete")
     end
 
-    it "each transfer can only happen once" do
+    it "each transfer can only happen once" do 
+      
       transfer.execute_transaction
       expect(amanda.balance).to eq(950)
       expect(avi.balance).to eq(1050)
